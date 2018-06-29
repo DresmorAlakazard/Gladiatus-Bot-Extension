@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Gladiatus Bot 3.0",
+    "version": "3.0",
+    "description": "This extension made by Dresmor Alakazard, for learning purposes only. :)",
+
+    "permissions": [
+        "storage",
+        "idle",
+        "activeTab",
+        "https://gladiatussimulator.tk/*",
+        "https://*.gladiatussimulator.tk/*"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": [ "https://*.gladiatus.gameforge.com/*" ],
+            "js": ["jquery.js", "functions.js", "begin.js", "gui.js", "end.js", "main.js"]
+        }
+    ]
+}
